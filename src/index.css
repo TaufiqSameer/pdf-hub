@@ -6,8 +6,40 @@ body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
-  background-color: #1b1028; /* dark purple */
+  background-color: #1b1028;
   color: #eae6f2;
+}
+.content-wrapper {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+}
+
+
+.left-box {
+  width: 220px;
+  min-height: calc(100vh - 32px);
+  background: #1b0f2e;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 10px;
+  padding: 14px;
+  color: white;
+  font-size: 14px;
+}
+
+
+.app {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.viewer iframe {
+  width: 100%;
+  height: 600px;
+  border: none;
+  border-radius: 10px;
 }
 
 .app {
@@ -16,7 +48,7 @@ body {
   padding: 16px;
 }
 
-/* Header */
+
 .header {
   text-align: center;
   margin-bottom: 20px;
@@ -34,7 +66,7 @@ body {
   color: #c7bddb;
 }
 
-/* Subjects */
+
 .subjects {
   display: flex;
   flex-wrap: wrap;
@@ -63,7 +95,7 @@ body {
   color: #ffffff;
 }
 
-/* PDF List */
+
 .pdf-list {
   margin-bottom: 16px;
   text-align: center;
@@ -74,6 +106,7 @@ body {
   margin-bottom: 8px;
   color: #f5f3ff;
 }
+
 
 .pdf-btn {
   margin: 4px;
@@ -96,7 +129,6 @@ body {
   color: #ffffff;
 }
 
-/* Viewer */
 .viewer {
   background: #140a1f;
   border: 1px solid #4c3b70;
@@ -117,14 +149,14 @@ body {
   margin-top: 200px;
 }
 
-/* Mobile */
+
 @media (max-width: 600px) {
   .viewer iframe {
     height: 60vh;
   }
 }
 
-/* Subject Cards */
+
 .subject-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -164,7 +196,7 @@ body {
   background: #2f1c4a;
 }
 
-/* Navbar */
+
 .navbar {
   background: #140a1f;
   border-bottom: 1px solid #4c3b70;
@@ -177,14 +209,46 @@ body {
   font-size: 18px;
 }
 
-/* Home Content */
+
 .home-content {
   text-align: center;
   padding: 30px 10px;
 
 }
+.left-box {
+  width: 240px;
+  background: #1b0f2e;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 12px;
+  padding: 16px;
+  color: #e5e7eb;
+  font-size: 14px;
+  line-height: 1.5;
+}
 
-/* Footer */
+.box-title {
+  color: #c084fc;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.left-box p {
+  margin-bottom: 10px;
+}
+
+.email {
+  color: #a78bfa;
+  word-break: break-all;
+}
+
+.suggestion {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #d8b4fe;
+}
+
+
+
 .footer {
   margin-top: 40px;
   padding: 12px;

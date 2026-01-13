@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="app">
       <nav className="navbar">
-        <h2>Resources for CVR</h2>
+        <h2 style={{ textAlign:"center"}}>JNTUH R22,R26 NOTES</h2>
       </nav>
 
       <main className="home-content">
@@ -18,7 +18,7 @@ export default function Home() {
 
           <p className="note">
             If you have any more material regarding a subject please share it to
-            my email <b> sameertaufiq63@gmail.com</b>
+            my email <b>nemesisx9234@gmail.com</b>
           </p>
         </section>
 

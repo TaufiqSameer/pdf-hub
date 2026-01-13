@@ -6,7 +6,43 @@ export default function Year1() {
   const [activeSubject, setActiveSubject] = useState(null);
   const [activePdf, setActivePdf] = useState(null);
 
+  
+
   return (
+    <div className="content-wrapper">
+    <div className="left-box">
+  <h2 className="box-title">Disclaimer</h2>
+
+  <p>
+    The notes available on this website are shared by faculty members from
+    various colleges. If you belong to any of these colleges, please take a
+    moment to appreciate their efforts.
+  </p>
+
+  <p>
+    These materials are provided for reference purposes only. They may not be
+    100% accurate or fully aligned with your university syllabus. Students are
+    advised to verify the content before relying on it.
+  </p>
+
+  <p>
+    If you are a content owner and wish to request the removal of any material,
+    please contact me.
+  </p>
+
+  <p>
+    If you have additional study material that could benefit students, feel
+    free to share it at:
+    <br />
+    <b className="email">nemesisx9234@gmail.com</b>
+  </p>
+
+  <h4 className="suggestion">
+    Suggestions to improve the website are always welcome 
+  </h4>
+</div>
+
+    
     <div className="app">
       <header className="header">
         <h1>First Year</h1>
@@ -46,6 +82,7 @@ export default function Year1() {
           <p className="placeholder">Select a subject</p>
         )}
       </section>
+    </div>
     </div>
   );
 }
